@@ -1,0 +1,196 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face
+{
+  font-family: "Avenir Next";
+  src: url('Avenir Next.ttc'),
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: "Avenir Next";
+}
+
+img {
+  min-width: 100%;
+  min-height: 100%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+@media screen and (max-width: 800px) {
+
+  img {
+    height: 100%;
+  }
+
+}
+
+div.cover {
+  background-color: black;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+div.cover div.text {
+  position: absolute;
+  top: 46%;
+  margin-top: -66px;
+  margin-left: 40px;
+}
+
+div.cover h1 {
+  font-size: 108px;
+  color: white;
+  font-weight: 100;
+  letter-spacing: 20px;
+}
+
+div.cover h2 {
+  font-size: 80px;
+  color: white;
+  font-weight: 100;
+  position: relative;
+  left: 3px;
+}
+
+@media screen and (max-width: 1280px) {
+  div.cover h1 {
+    font-size: 80px;
+    letter-spacing: 20px;
+  }
+
+  div.cover h2 {
+    font-size: 63px;
+    left: 3px;
+  }
+}
+
+@media (max-width: 1080px) {
+  div.cover div.text {
+    top: 35%;
+  }
+
+}
+
+@media (max-width: 769px) {
+  div.cover div.text {
+    top: 35%;
+    margin-left: 20px;
+  }
+
+  div.cover h1 {
+    font-size: 60px;
+    letter-spacing: 16px;
+  }
+
+  div.cover h2 {
+    font-size: 48px;
+    left: 2px;
+  }
+}
+
+@media (max-width: 480px) {
+  div.cover div.text {
+    top: 40%;
+    margin-left: 10px;
+  }
+
+  div.cover h1 {
+    font-size: 32px;
+    letter-spacing: 8px;
+  }
+
+  div.cover h2 {
+    font-size: 25px;
+    left: 2px;
+  }
+}
+
+
+
+/*@-webkit-keyframes myfirst {
+    0%   {background: red; left:0px; top:0px;}
+    25%  {background: yellow; left:200px; top:0px;}
+    50%  {background: blue; left:200px; top:200px;}
+    75%  {background: green; left:0px; top:200px;}
+    100% {background: red; left:0px; top:0px;}
+}
+
+@keyframes myfirst {
+    0%   {background: red; left:0px; top:0px;}
+    25%  {background: yellow; left:200px; top:0px;}
+    50%  {background: blue; left:200px; top:200px;}
+    75%  {background: green; left:0px; top:200px;}
+    100% {background: red; left:0px; top:0px;}
+}
+
+
+@-webkit-keyframes myfirst {
+    0%   {background: red;}
+    25%  {background: yellow;}
+    50%  {background: blue;}
+    75%  {background: green;}
+    100% {background: red;}
+}
+
+@keyframes myfirst {
+    0%   {background: red;}
+    25%  {background: yellow;}
+    50%  {background: blue;}
+    75%  {background: green;}
+    100% {background: red;}
+}
